@@ -1,6 +1,7 @@
 boolean si= false, j=false, i=false;
 void movimiento1()
 {
+  if(si == false){
   textFont(letra1, 50);
   image(fondo,0,0,920,620);
   fill(224,146,61);
@@ -12,6 +13,7 @@ void movimiento1()
   text("   CARTOON  NIGTHMARE", x-242, y+10);
   fill(255);
   text("   CARTOON  NIGTHMARE", x-250, y);
+  }
 }
 void accion()
 {
@@ -40,6 +42,7 @@ void accion()
       text("   CARTOON  NIGTHMARE", x-242, y+10);
       fill(255);
       text("   CARTOON  NIGTHMARE", x-250, y);
+      
       if(mousePressed){      //Click en jugar
         si = true;
         j = true;
@@ -52,15 +55,13 @@ void accion()
         fill(r,g,b);
         text("INSTRUCCIONES", 330,310);
         rect(320,315,280,4);  
-        
-      if(mousePressed){
-        i=true;
-        si = true;
+        if(mousePressed){
+          i  =  true;
+          si = true;
       }
     }
   }
-    if(j==true){
-      background(0);
+    if(j==true){0
     }
     if(i==true && si==true)
     {
@@ -68,5 +69,24 @@ void accion()
       textFont(letra1,20);
       fill(255);
       text("Presionar flechas para activar el movimiento del personaje1",200,100);
+      text("UP",630,260);
+      text("LEFT",460,480);
+      text("RIGTH",790,480);
+      text("DOWN",620,550);
+      image(teclas,500,250,300,300);
+      fill(255);
+      stroke(40);
+      fill(0);
+      rect(80,520,130,50);
+      fill(255);
+      text("VOLVER",100,550);
+      if(mouseX>=82 && mouseY >= 520 && mouseX<=210 && mouseY <= 569){
+        fill(#CE2A2A);
+        text("VOLVER",100,550);
+        if(mousePressed){
+          si = false;
+          i = false;
+        }
+      }
     }
   }
