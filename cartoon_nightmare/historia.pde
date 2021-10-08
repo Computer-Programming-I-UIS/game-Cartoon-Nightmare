@@ -16,6 +16,6 @@ void historiaP2()
 }
 void historiaP3()
 {
-  text("(Grito aturnidor)...\n-Jonas: '¡Mateo! ¿Qué sucede?'", 400,520);
+  text("(Grito aturdidor)...\n-Jonas: '¡Mateo! ¿Qué sucede?'", 400,520);
   text("Dirígete al portal", 400,560);
 }

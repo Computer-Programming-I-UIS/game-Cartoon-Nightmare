@@ -23,7 +23,7 @@ void mapa1() {
   if (mouseX>=493 && mouseX<=506 && mouseY>=118 && mouseY<=141) {      //click en olla
     a = true;
   }
-  if (a==true) {      //movimiento mateo 
+  if (a==true) {      //movimiento mateo
     ya -= vely ;
     xa += velx ;
     if (xa > 725) {
@@ -33,11 +33,18 @@ void mapa1() {
       velx = -velx;
     }
   }
-  if (ya < 220) {
+  if (ya < 220) {      //
     a = false;
     v = false;
     image(portal, 710, 200, 100, 100);
     historiaP3();
     z=true;
+  }
+  if (xJ>=684 && xJ<730 && yJ>=178 && yJ<=231) {
+    q=true;
+    pushMatrix();
+    translate(0,0);
+    combate();
+    popMatrix();
   }
 }
