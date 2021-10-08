@@ -43,4 +43,5 @@ void combate() {
       }
     }
   }
+  ataque();
 }

@@ -11,4 +11,13 @@ void barraVida(int xBV,int yBV)
 }
 
 void ataque(){
+  fill(#625B5B);
+  rect(45,445,260,110);
+  fill(250);
+  rect(50,450,250,100);
+  text("ATAQUE!",80,430);
+  fill(0);
+  ellipse(180,500,240,100);
+  fill(250);
+  ellipse(180,500,230,90);
 }

@@ -11,6 +11,8 @@ void movimiento1()
     text("   CARTOON  NIGTHMARE", x-242, y+10);
     fill(255);
     text("   CARTOON  NIGTHMARE", x-250, y);
+    image(restEdad,20,480,90,100);
+    image(genero,80,440,180,180);
   }
 }
 void accion()
