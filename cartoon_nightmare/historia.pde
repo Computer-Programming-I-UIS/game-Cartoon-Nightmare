@@ -11,16 +11,16 @@ void historiaP1()
     text("El sustento diario lo logra Jonas en su trabajo, una fabrica de manufactura \ncon turnos de día completo.\nLa soledad fría y abrumadora de la cabaña, Mateo la olvida viendo \nen su tv, heredada de su abuelo, sus episodios favoritos de Cartoon Network.", 26, 340);
     textFont(letra1, 20);
     text("Presiona la tecla 'a' para continuar...", 600, 580);
-    h2=false;
-    h3=false;
+   // h2=false;
+    ///h3=false;
   }
 }
 void historiaP2()
 {
   if (h2 == true) {
     text("Jonas llega a prepararse la comida: \n*Ve a la cocina y posa el cursor en la olla.", 400, 520);
-    h1=false;
-    h3=false;
+    //h1=false;
+    //h3=false;
   }
 }
 void historiaP3()
@@ -28,7 +28,7 @@ void historiaP3()
   if (h3 == true) {
     text("(Grito aturdidor)...\n-Jonas: '¡Mateo! ¿Qué sucede?'", 400, 520);
     text("Dirígete al portal", 400, 560);
-    h1=false;
-    h2=false;
+    //h1=false;
+   // h2=false;
   }
 }

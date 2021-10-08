@@ -50,10 +50,11 @@ void setup()
   genero = loadImage("genero.png");
   minim = new Minim(this);
   musicafondo = minim.loadFile("musicafondo.mp3");
-  musicafondo.loop();
+ // musicafondo.loop();
 }
 void draw()
 {
+  
   movimiento1();
   accion();
   
