@@ -74,14 +74,14 @@ void accion()
       if (mousePressed)c=true;
     }
   }
-  if (j==true) {      //comienzo historia
+  if (j==true) {      //JUGAR ON - comienzo historia
     historiaP1();
       if(key=='a')l = true;
       if(l==true)
       {
         pushMatrix();
         translate(460,300);
-        image(mapa1,0,0,1000,700);
+        image(mapa1,0,0,1000,700);      //Mapa juego
         image(tv,250,-110,50,50);
         popMatrix();
         mapa1();

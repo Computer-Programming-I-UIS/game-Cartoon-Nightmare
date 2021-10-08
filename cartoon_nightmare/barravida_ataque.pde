@@ -9,3 +9,6 @@ void barraVida(int xBV,int yBV)
   fill(0,255,0);
   rect(xBV+pix,yBV,(10*pix),3*pix);
 }
+
+void ataque(){
+}
