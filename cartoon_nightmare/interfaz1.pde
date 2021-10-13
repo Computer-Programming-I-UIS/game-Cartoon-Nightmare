@@ -1,5 +1,5 @@
-boolean si= false, j=false, i=false, c=false, l=false;
-void movimiento1()
+boolean si= false, j=false, i=false, c=false, l=false, historiaon=true, mapa1off=true;
+void interfaz()
 {
   if (si == false) {
     textFont(letra1, 50);
@@ -11,8 +11,8 @@ void movimiento1()
     text("   CARTOON  NIGTHMARE", x-242, y+10);
     fill(255);
     text("   CARTOON  NIGTHMARE", x-250, y);
-    image(restEdad,20,480,90,100);
-    image(genero,80,440,180,180);
+    image(restEdad, 20, 480, 90, 100);
+    image(genero, 80, 440, 180, 180);
   }
 }
 void accion()
@@ -77,19 +77,28 @@ void accion()
     }
   }
   if (j==true) {      //JUGAR ON - comienzo historia
+    if (historiaon==true) {
+      historiaP1();
+    }
     historiaP1();
-      if(key=='a')l = true;
-      if(l==true)
-      {
+    if (key=='a'|| key=='A') {
+      l = true;
+      h1=false;
+      background(0);
+    }
+    if (l==true)
+    {
+      if (mapa1off==true) {
         pushMatrix();
-        translate(460,300);
-        image(mapa1,0,0,1000,700);      //Mapa juego
-        image(tv,250,-110,50,50);
+        translate(460, 300);
+        image(mapa1, 0, 0, 1000, 700);      //Mapa juego
+        image(tv, 250, -110, 50, 50);
         popMatrix();
         mapa1();
         jugador();
-        if(z==false)historiaP2(); 
       }
+      if (z==false)historiaP2();
+    }
   }
   if (i==true)      // i == Variable Booleana para las instrucciones
   {

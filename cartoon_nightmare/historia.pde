@@ -18,6 +18,7 @@ void historiaP1()
 void historiaP2()
 {
   if (h2 == true) {
+    textFont(letra1, 20);
     text("Jonas llega a prepararse la comida: \n*Ve a la cocina y posa el cursor en la olla.", 400, 520);
     //h1=false;
     //h3=false;
@@ -26,6 +27,7 @@ void historiaP2()
 void historiaP3()
 {
   if (h3 == true) {
+    textFont(letra1, 20);
     text("(Grito aturdidor)...\n-Jonas: '¡Mateo! ¿Qué sucede?'", 400, 520);
     text("Dirígete al portal", 400, 560);
     //h1=false;

@@ -1,6 +1,6 @@
 int xa=710, ya =270 ;
 float vely = 2, velx = 7;
-boolean a=false, v=true;
+boolean a=false, v=true, entroportal=false;
 void mapa1() {
 
   if (v==true) {
@@ -41,11 +41,16 @@ void mapa1() {
     z=true;
   }
   if (xJ>=684 && xJ<730 && yJ>=178 && yJ<=231) {      //Entro al portal
-    //q=true;
-    pushMatrix();
-    translate(460,300);
-    image(mapa2,0,0,1000,700);
-    //combate();
-    popMatrix();
+    entroportal=true;
+    mapa1off = false;
+  }
+}
+  void mapa2() {
+    if (entroportal==true) {    //entre otra dimension
+      pushMatrix();
+      translate(460, 300);
+      image(mapa2, 0, 0, 1000, 700);
+      popMatrix();
+      jugador();   
   }
 }
