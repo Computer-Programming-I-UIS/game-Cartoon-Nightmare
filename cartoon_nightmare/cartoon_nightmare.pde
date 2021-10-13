@@ -1,9 +1,9 @@
 import ddf.minim.*;
-import ddf.minim.analysis.*;
+/*import ddf.minim.analysis.*;
 import ddf.minim.effects.*;
 import ddf.minim.signals.*;
 import ddf.minim.spi.*;
-import ddf.minim.ugens.*;
+import ddf.minim.ugens.*;*/
 
 import sprites.*;
 import sprites.maths.*;
@@ -12,7 +12,7 @@ import sprites.utils.*;
 Minim minim;
 AudioPlayer musicafondo;
 
-PFont letra, letra1, letraC; PImage fondo, tv, fondo2, niñoint, mapa1, portal, teclas, hqui,hizq,hder,hab,harri,fondop1,mordecai, restEdad, genero;
+PFont letra, letra1, letraC; PImage fondo, tv, fondo2, niñoint, mapa1, portal, teclas, hqui,hizq,hder,hab,harri,fondop1,mordecai, restEdad, genero, mapa2;
 float yC=80 ,x=350, y=100, tiempoFrames, xJ=140, yJ=550, vel = 5; int jugadorFrames, xw=30, yw=500,xins = 210, yins = 300, xj1=500, yj1=300; //x=270
 boolean z=false;
 Sprite MovJD, MovJQ, MovJI, MovJAB,MovJAR; StopWatch reloj; //reloj, contador para llevar el tiempo
@@ -50,7 +50,8 @@ void setup()
   genero = loadImage("genero.png");
   minim = new Minim(this);
   musicafondo = minim.loadFile("musicafondo.mp3");
- // musicafondo.loop();
+  //musicafondo.loop();
+  mapa2 = loadImage("mapa2.png");
 }
 void draw()
 {

@@ -40,11 +40,12 @@ void mapa1() {
     historiaP3();
     z=true;
   }
-  if (xJ>=684 && xJ<730 && yJ>=178 && yJ<=231) {
-    q=true;
+  if (xJ>=684 && xJ<730 && yJ>=178 && yJ<=231) {      //Entro al portal
+    //q=true;
     pushMatrix();
-    translate(0,0);
-    combate();
+    translate(460,300);
+    image(mapa2,0,0,1000,700);
+    //combate();
     popMatrix();
   }
 }

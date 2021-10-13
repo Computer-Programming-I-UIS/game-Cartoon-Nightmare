@@ -1,11 +1,11 @@
 void creditos()
 {
-  float xC=330, r=232,g=128,b=23;
+  float xC=330, r=232, g=128, b=23;
   textFont(letraC, 25);
-  fill(r,g,b);
-  text("  ______________________________",xC-90,yC-22);
-  text("<______________***_____________>",xC-90,yC+4);
-  text("CARTOON NIGHTMARE",xC,yC+40);  //Título
+  fill(r, g, b);
+  text("  ______________________________", xC-90, yC-22);
+  text("<______________***_____________>", xC-90, yC+4);
+  text("CARTOON NIGHTMARE", xC, yC+40);  //Título
   textFont(letraC, 20);
   text("IMAGES and INTERACE", xC+30, yC+80); //Subtitulos
   textFont(letra1, 20);
@@ -24,11 +24,13 @@ void creditos()
   yC--;
   text("VOLVER", 100, 550);
   if (mouseX>=82 && mouseY >= 520 && mouseX<=210 && mouseY <= 569) {      //instruccion para volver
-      fill(#CE2A2A);
-      text("VOLVER", 100, 550);
-      if (mousePressed) {
-        si = false;
-        c = false;
-      }
+    fill(#CE2A2A);
+    text("VOLVER", 100, 550);
+    if (mousePressed) {
+      xC=330;
+      yC=80;
+      si = false;
+      c = false;
     }
+  }
 }
