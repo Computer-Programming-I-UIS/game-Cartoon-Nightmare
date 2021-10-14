@@ -1,6 +1,6 @@
 int xa=700, ya =250 ;
 float vely = 2, velx = 7;
-boolean a=false, v=true, entroportal=false;
+boolean a=false, v=true, entroportal=false, reyMov=false;
 void mapa1() {
 
   if (v==true) {
@@ -32,12 +32,28 @@ void mapa1() {
     mapa1off = false;
   }
 }
-  void mapa2() {
+void mapa2() {
     if (entroportal==true) {    //entre otra dimension
       pushMatrix();
       translate(460, 300);
       image(mapa2, 0, 0, 1000, 700);
       popMatrix();
-      jugador();   
+      jugador();
+      image(consola,150,480,200,200);
+      if(reyMov==false)image(rey,665,369,100,100);
+      if(xJ>=689 && xJ<=740 && yJ>=365 && yJ<=411)
+      {
+        reyMov=true;
+      }
+      else reyMov=false;
+      if(reyMov==true)
+      {
+        float xR=665, yR=369;
+        pushMatrix();
+        translate(xR, yR);
+        Rey.draw();
+        popMatrix();
+      }  
+      //image(mordecai, 250, 480, 120,120);
   }
 }

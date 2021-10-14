@@ -13,11 +13,11 @@ Minim minim;
 AudioPlayer musicafondo;
 
 PFont letra, letra1, letraC;
-PImage fondo, tv, fondo2, niñoint, mapa1, portal, teclas, hqui, hizq, hder, hab, harri, fondop1, mordecai, restEdad, genero, mapa2, hsentado;
+PImage fondo, tv, fondo2, niñoint, mapa1, portal, teclas, hqui, hizq, hder, hab, harri, fondop1, mordecai, restEdad, genero, mapa2, hsentado, consola,rey;
 float yC=80, x=350, y=100, tiempoFrames, xJ=140, yJ=550, vel = 5;
 int jugadorFrames, xw=30, yw=500, xins = 210, yins = 300, xj1=500, yj1=300; //x=270
 boolean z=false;
-Sprite MovJD, MovJQ, MovJI, MovJAB, MovJAR;
+Sprite MovJD, MovJQ, MovJI, MovJAB, MovJAR, Rey;
 StopWatch reloj; //reloj, contador para llevar el tiempo
 void setup()
 {
@@ -39,6 +39,8 @@ void setup()
   MovJAB.setFrameSequence(9, 10, 0.1);
   MovJAR = new Sprite(this, "HermanoM.png", 14, 1, 0);
   MovJAR.setFrameSequence(12, 13, 0.1);
+  Rey = new Sprite(this,"sprite_reyhelado.png",3,1,0);
+  Rey.setFrameSequence(0,2,0.4);
   niñoint = loadImage("niñoint.png");
   mapa1 = loadImage("mapa11.jpeg");
   tv = loadImage("tv.png");
@@ -56,10 +58,13 @@ void setup()
   //musicafondo.loop();
   mapa2 = loadImage("mapa2.png");
   hsentado = loadImage("hsentado.png");
+  consola = loadImage("consola.png");
+  rey = loadImage("rey.png");
 }
 void draw()
 {
   interfaz();
   accion();
   mapa2();
+  //print(mouseX, mouseY);
 }
