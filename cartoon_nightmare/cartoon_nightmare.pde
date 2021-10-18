@@ -76,7 +76,7 @@ void sonido()
 {
   if(musicaoff==false)
   {
-    musicafondo.play();
+    //musicafondo.play();
     image(sonidon,20,30,50,40);
     if(mouseX<=60 && mouseX>=30 && mouseY<=68 && mouseY>=30)
     {

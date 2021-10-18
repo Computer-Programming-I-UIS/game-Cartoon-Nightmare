@@ -40,10 +40,12 @@ void mapa2() {
       popMatrix();
       jugador();
       image(consola,150,480,200,200);
-      if(reyMov==false)image(rey,665,369,100,100);
+      if(reyMov==false)image(rey,665,369,100,100);      //Rey Helado en la otra dimensión
       if(xJ>=689 && xJ<=740 && yJ>=365 && yJ<=411)
       {
         reyMov=true;
+        textFont(letra1,20);
+        text("OH!, tenemos invitados",460,510);
       }
       else reyMov=false;
       if(reyMov==true)
