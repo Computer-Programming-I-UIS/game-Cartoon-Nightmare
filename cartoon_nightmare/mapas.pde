@@ -1,6 +1,6 @@
 int xa=700, ya =250 ;
 float vely = 2, velx = 7;
-boolean a=false, v=true, entroportal=false, reyMov=false;
+boolean a=false, v=true, entroportal=false, reyMov=false,textorh=false;
 void mapa1() {
 
   if (v==true) {
@@ -34,18 +34,20 @@ void mapa1() {
 }
 void mapa2() {
     if (entroportal==true) {    //entre otra dimension
+      textFont(letra1,20);
       pushMatrix();
       translate(460, 300);
       image(mapa2, 0, 0, 1000, 700);
       popMatrix();
       jugador();
       image(consola,150,480,200,200);
+      historiaP4();      //historia 4
       if(reyMov==false)image(rey,665,369,100,100);      //Rey Helado en la otra dimensión
       if(xJ>=689 && xJ<=740 && yJ>=365 && yJ<=411)
       {
         reyMov=true;
-        textFont(letra1,20);
-        text("OH!, tenemos invitados",460,510);
+        textorh=true;
+        h4 = false;      //borro historia 4
       }
       else reyMov=false;
       if(reyMov==true)
@@ -57,5 +59,12 @@ void mapa2() {
         popMatrix();
       }  
       //image(mordecai, 250, 480, 120,120);
+  }
+  if(textorh==true){
+    text("OH!, tenemos invitados...",420,490);
+    text("Un gusto, soy el Rey Helado y soy el guia de \nesta dimensión.",420,520);
+    fill(250,0,0);
+    text("Presiona 'a' para escuchar al Rey Helado...",420,570);
+    fill(250);
   }
 }

@@ -42,7 +42,7 @@ void setup()
   Rey = new Sprite(this,"sprite_reyhelado.png",3,1,0);
   Rey.setFrameSequence(0,2,0.4);
   niñoint = loadImage("niñoint.png");
-  mapa1 = loadImage("mapa11.jpeg");
+  mapa1 = loadImage("mapa11.png");
   tv = loadImage("tv.png");
   portal = loadImage("portal.png");
   teclas = loadImage("teclas.png");

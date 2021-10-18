@@ -79,7 +79,7 @@ void jugador()
     }
     if (keyPressed && (key==CODED))
     {
-      if (keyCode == UP && yJ>150)      //Movimiento ARRIBA
+      if (keyCode == UP && yJ>170)      //Movimiento ARRIBA
       {
         pushMatrix();
         translate(xJ, yJ);
