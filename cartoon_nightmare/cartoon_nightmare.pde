@@ -13,7 +13,7 @@ Minim minim;
 AudioPlayer musicafondo;
 
 PFont letra, letra1, letraC;
-PImage fondo, tv, fondo2, niñoint, mapa1, portal, teclas, hqui, hizq, hder, hab, harri, fondop1, mordecai, restEdad, genero, mapa2, hsentado, consola,rey, sonidon, sonidoff;
+PImage fondo, tv, fondo2, niñoint, mapa1, portal, teclas, hqui, hizq, hder, hab, harri, fondop1, mordecai, restEdad, genero, mapa2, hsentado, consola,rey, sonidon, sonidoff, mordecaimapa ;
 float yC=80, x=350, y=100, tiempoFrames, xJ=140, yJ=550, vel = 5;
 int jugadorFrames, xw=30, yw=500, xins = 210, yins = 300, xj1=500, yj1=300; //x=270
 boolean z=false, musicaoff=false, musicaon=true;
@@ -62,6 +62,7 @@ void setup()
   rey = loadImage("rey.png");
   sonidon = loadImage("sonidonn.png");
   sonidoff = loadImage("sonidoff.png");
+  mordecaimapa= loadImage("modecaimapa.png");
 }
 void draw()
 {
