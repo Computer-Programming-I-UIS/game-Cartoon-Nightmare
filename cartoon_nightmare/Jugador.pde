@@ -38,7 +38,7 @@ void jugador()
 
     if (keyPressed && (key==CODED))      //Movimiento IZQUIERDA
     {
-      if (keyCode ==LEFT && xJ>70)
+      if (keyCode ==LEFT && xJ>70 && (xJ>130 && yJ>110) )
       {
         pushMatrix();
         translate(xJ, yJ);
