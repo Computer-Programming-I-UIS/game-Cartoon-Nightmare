@@ -16,7 +16,7 @@ PFont letra, letra1, letraC;
 PImage fondo, tv, fondo2, niñoint, mapa1, portal, teclas, hqui, hizq, hder, hab, harri, fondop1, mordecai, restEdad, genero, mapa2, hsentado, consola,rey, sonidon, sonidoff, mordecaimapa ;
 float yC=80, x=350, y=100, tiempoFrames, xJ=140, yJ=550, vel = 5;
 int jugadorFrames, xw=30, yw=500, xins = 210, yins = 300, xj1=500, yj1=300; //x=270
-boolean z=false, musicaoff=false, musicaon=true;
+boolean z=false, botonoff=false, botonon=true;
 Sprite MovJD, MovJQ, MovJI, MovJAB, MovJAR, Rey;
 StopWatch reloj; //reloj, contador para llevar el tiempo
 void setup()
@@ -75,29 +75,22 @@ void draw()
 }
 void sonido()
 {
-  if(musicaoff==false)
+  if(botonoff==false)
   {
-    //musicafondo.play();
-    image(sonidon,20,30,50,40);
-    if(mouseX<=60 && mouseX>=30 && mouseY<=68 && mouseY>=30)
+    musicafondo.play();
+    image(sonidon,10,10,50,50);
+    if(mouseX>=20 && mouseX<=49 && mouseY>=19 && mouseY<=46 && mousePressed)
     {
-      if(mousePressed && musicaoff==false)
-      {
-        musicaoff = true;
-      }  
-    } 
+        botonoff=true;
+    }
   }
-  if(musicaoff==true)
+  if(botonoff==true)
   {
-    image(sonidoff,20,30,50,40);
-    musicafondo.pause();   
-  }
- if(mouseX<=60 && mouseX>=30 && mouseY<=68 && mouseY>=30)
-  {
-    if(mousePressed && musicaoff==true)
+    image(sonidoff,10,50,50,50);
+    musicafondo.pause();
+    if(mouseX>=18 && mouseX<=49 && mouseY>=58 && mouseY<=88 )
     {
-      //musicaon=true;
-      musicaoff=false;
-    }  
+      if(mousePressed)botonoff=false;
+    }
   }
 }
