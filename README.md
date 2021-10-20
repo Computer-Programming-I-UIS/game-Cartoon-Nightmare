@@ -35,5 +35,5 @@ Canción: https://www.youtube.com/watch?v=tklvXwRcXYc&list=PLD7-2uwyvyXD__ke7B0G
 
 ## Restricción Edad
 
-![ESRB_AO-2000x2791-990888410](https://github.com/Computer-Programming-I-UIS/game-Cartoon-Nightmare/blob/main/cartoon_nightmare/data/restriccionEdad.png?raw=true)
+1[image]((https://github.com/Computer-Programming-I-UIS/game-Cartoon-Nightmare/blob/main/cartoon_nightmare/data/restriccionEdad.png?raw=true {width=40px height=80px})
 
