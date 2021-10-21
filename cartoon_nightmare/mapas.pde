@@ -47,8 +47,7 @@ void mapa2() {
       {
         reyMov=true;
         textorh=true;
-        h4 = false;  
-        image(mordecaimapa,240,420,90,90);//borro historia 4
+        h4 = false;  //borro historia 4
       }
       else reyMov=false;
       if(reyMov==true)
@@ -67,5 +66,6 @@ void mapa2() {
     fill(250,0,0);
     text("Presiona 'a' para escuchar al Rey Helado...",420,570);
     fill(250);
+    image(mordecaimapa,240,420,90,90);
   }
 }

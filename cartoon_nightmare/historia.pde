@@ -3,19 +3,26 @@ void historiaP1()
 {
   if (h1 == true) {
     background(0);
-    textFont(letra1, 26);
-    text("Cae la noche y Jonas regresa de su jornada laboral. Lo espera Mateo \n(su hermano menor), cenando y viendo, cómo es habitual sus \ncaricaturas. La noche cae densa y su oscuridad limita las pocas luces \nque rodean la cabaña...", 25, 90);
+    image(bosque,0,0,900,450);
+    textFont(letra1, 20);
+    fill(255);
+    text("Cae la noche y Jonas regresa de su jornada laboral. Lo espera Mateo (su hermano menor),\ncenando y viendo, cómo es habitual sus caricaturas. La noche cae densa y su oscuridad \nlimita las pocas luces que rodean la cabaña... Sucesos muy extraños se aproximan esta noche", 20, 490);
+    image(hqui,300,370,110,110);
+    textFont(letra1, 16);
+    fill(250,0,0);
+    text("Presiona la tecla 'a' para continuar...", 550, 590);
+    // h2=false;
+    ///h3=false;
+  }
+}
+void resumeniñez()
+{
     text("Una corta introducción a la historia de Jonas y Mateo: ", 25, 220);
     textFont(letra, 26);
     text("//Jonas y Mateo quedan hurfanos con 8 y 3 años, respectivamente. \nViven con sus abuelos en una cabaña a las afueras del pueblo Necronomicon.\nSus abuelos fallecen, Jonas es el encargado de cuidar y educar a su hermano.//", 23, 260);
     text("El sustento diario lo logra Jonas en su trabajo, una fabrica de manufactura \ncon turnos de día completo.\nLa soledad fría y abrumadora de la cabaña, Mateo la olvida viendo \nen su TV, heredada de su abuelo, sus episodios favoritos de Cartoon Network.", 26, 360);
     textFont(letra1, 20);
-    fill(250,0,0);
-    text("Presiona la tecla 'a' para continuar...", 530, 570);
     fill(250);
-   // h2=false;
-    ///h3=false;
-  }
 }
 void historiaP2()
 {

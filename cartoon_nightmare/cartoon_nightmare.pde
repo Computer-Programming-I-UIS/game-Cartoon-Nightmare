@@ -1,10 +1,5 @@
-import ddf.minim.*;
-/*import ddf.minim.analysis.*;
- import ddf.minim.effects.*;
- import ddf.minim.signals.*;
- import ddf.minim.spi.*;
- import ddf.minim.ugens.*;*/
 
+import ddf.minim.*;
 import sprites.*;
 import sprites.maths.*;
 import sprites.utils.*;
@@ -13,7 +8,7 @@ Minim minim;
 AudioPlayer musicafondo;
 
 PFont letra, letra1, letraC;
-PImage fondo, tv, fondo2, niñoint, mapa1, portal, teclas, hqui, hizq, hder, hab, harri, fondop1, mordecai, restEdad, genero, mapa2, hsentado, consola,rey, sonidon, sonidoff, mordecaimapa ;
+PImage fondo, tv, fondo2, niñoint, mapa1, portal, teclas, hqui, hizq, hder, hab, harri, fondop1, mordecai, restEdad, genero, mapa2, hsentado, consola,rey, sonidon, sonidoff, mordecaimapa, bosque ;
 float yC=80, x=350, y=100, tiempoFrames, xJ=140, yJ=550, vel = 5;
 int jugadorFrames, xw=30, yw=500, xins = 210, yins = 300, xj1=500, yj1=300; //x=270
 boolean z=false, botonoff=false, botonon=true;
@@ -27,6 +22,7 @@ void setup()
   letraC = loadFont("letraCreditos.vlw");
   fondo = loadImage("fondoint.jpg");
   fondo2 = loadImage("fondo2.png");
+  bosque = loadImage("bosque.jpg");
   mordecai = loadImage("mordecaipelea.png");
   reloj = new StopWatch();
   MovJD = new Sprite(this, "HermanoM.png", 14, 1, 0);
@@ -70,7 +66,6 @@ void draw()
   accion();
   mapa2();
   sonido();
-
   //print(mouseX, mouseY);
 }
 void sonido()
@@ -78,17 +73,17 @@ void sonido()
   if(botonoff==false)
   {
     musicafondo.play();
-    image(sonidon,10,10,50,50);
-    if(mouseX>=20 && mouseX<=49 && mouseY>=19 && mouseY<=46 && mousePressed)
+    image(sonidon,10,0,50,50);
+    if(mouseX>=20 && mouseX<=49 && mouseY>=9 && mouseY<=36 && mousePressed)
     {
         botonoff=true;
     }
   }
   if(botonoff==true)
   {
-    image(sonidoff,10,50,50,50);
+    image(sonidoff,10,35,50,50);
     musicafondo.pause();
-    if(mouseX>=18 && mouseX<=49 && mouseY>=58 && mouseY<=88 )
+    if(mouseX>=18 && mouseX<=49 && mouseY>=43 && mouseY<=73 )
     {
       if(mousePressed)botonoff=false;
     }
