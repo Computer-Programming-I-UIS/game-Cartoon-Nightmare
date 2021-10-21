@@ -20,4 +20,5 @@ void ataque(){
   ellipse(180,500,240,100);
   fill(250);
   ellipse(180,500,230,90);
+  fill(250);
 }
