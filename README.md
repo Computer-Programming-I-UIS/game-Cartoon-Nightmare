@@ -7,10 +7,6 @@ Nuestra apuesta fue adaptar su método de batalla y narración de la historia. P
 
 ![image text](https://github.com/Computer-Programming-I-UIS/game-Cartoon-Nightmare/blob/main/cartoon_nightmare/data/Banner.png)
 
-## Interfaz
-
-![image](https://github.com/Computer-Programming-I-UIS/game-Cartoon-Nightmare/blob/main/cartoon_nightmare/data/fondointerfaz.jpeg?raw=true)
-
 ## Metodología de Juego:
 Para éste apartado se adoptó un modo bastante clásico: Movimiento del personaje con las flechas del teclado; uso del curso para acceder al videojuego y para el desarrollo de la historia; teclas especificadas en texto para el correcto procedimiento de la historia.
 
