@@ -5,6 +5,8 @@
 La codificación de éste juego fue basada en el reconocido videojuego Undertale, su metodología se basa en una historia dónde el jugador principal se enfrenta a múltiples amenazas, las cuáles debe derrotar hasta llegar a la merecida victoria.
 Nuestra apuesta fue adaptar su método de batalla y narración de la historia. Para ello, creamos la vida de dos personajes Jonas y Mateo, hermanos que a temprana edad pierden a sus padres. Viven en una zona alejada del pueblo y llena de atrocidades por su profunda oscuridad... continuará en el videojuego.
 
+![image text](https://github.com/Computer-Programming-I-UIS/game-Cartoon-Nightmare/blob/main/cartoon_nightmare/data/Banner.png)
+
 ## Interfaz
 
 ![image](https://github.com/Computer-Programming-I-UIS/game-Cartoon-Nightmare/blob/main/cartoon_nightmare/data/fondointerfaz.jpeg?raw=true)
@@ -35,6 +37,6 @@ Canción: https://www.youtube.com/watch?v=tklvXwRcXYc&list=PLD7-2uwyvyXD__ke7B0G
 
 ## Restricción Edad
 
-<img src="https://github.com/Computer-Programming-I-UIS/game-Cartoon-Nightmare/blob/main/cartoon_nightmare/data/restriccionEdad.png" width="20">
-![image text](https://github.com/Computer-Programming-I-UIS/game-Cartoon-Nightmare/blob/main/cartoon_nightmare/data/Banner.png)
+<img src="https://github.com/Computer-Programming-I-UIS/game-Cartoon-Nightmare/blob/main/cartoon_nightmare/data/restriccionEdad.png" width="60">
+
 
