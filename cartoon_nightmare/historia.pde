@@ -72,7 +72,7 @@ void historiaP5()
     {
       fill(250);
       textFont(letra1, 18);
-      text("Te preguntarás que es éste lugar, Jonas. Te explico, \nlas caricaturas favoritas de tu hermano decidieron llevarlo a un lugar donde supuestamente \nserá feliz, ya que tú lo dejabas a solas mucho tiempo. \nDeberás enfrentarte a unas de sus caricaturas favoritas y \ndemostrar que si te importa.",400,470);
+      text("Te preguntarás que es éste lugar, Jonas. Te explico, \nlas caricaturas favoritas de tu hermano decidieron llevarlo \na un lugar donde supuestamente será feliz, ya que tú \nlo dejabas a solas mucho tiempo. Deberás enfrentarte a \nunas de sus caricaturas favoritas y demostrar que si te \nimporta. Muchas suerte!!!",400,470);
       fill(250,0,0);
       text("Dirigite a tu primer combate que será con Mordecai. Derrotalo!!",320,590);    
     }

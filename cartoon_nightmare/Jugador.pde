@@ -1,5 +1,5 @@
 boolean q=false;
-void jugador()
+void jugador() //Uso de la librería sprites
 {
   if (q==false) {
     tiempoFrames =(float) reloj.getElapsedTime(); //tiempo transcurrido

@@ -68,7 +68,6 @@ void ataque() {
   fill(#F7464C);
   ellipse(xb+145, yb+20, 50, 90);      //rojo
   fill(0);
-  print(xBarra);
   for (int i=0; i<=200; i+=10) {
     strokeWeight(5);
     rect(540+i, 510, 5, 20);      //Finalizacion barra ataque

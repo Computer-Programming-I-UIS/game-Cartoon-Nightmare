@@ -6,16 +6,18 @@ import sprites.utils.*;
 
 Minim minim;
 AudioPlayer musicafondo;
-
+//------------------------------------Definición de variables---------------------------------//
 PFont letra, letra1, letraC;
 PImage fondo, tv, fondo2, niñoint, mapa1, portal, teclas, hqui, hizq, hder, hab, harri, fondop1, mordecai, restEdad, genero, mapa2, hsentado, consola,rey, sonidon, sonidoff, mordecaimapa, bosque ;
 float yC=80, x=350, y=100, tiempoFrames, xJ=140, yJ=550, vel = 5, xb=500,yb=500;
 int jugadorFrames, xw=30, yw=500, xins = 210, yins = 300, xj1=500, yj1=300; //x=270
-boolean z=false, botonoff=false, botonon=true;
+boolean z=false, botonoff=false, botonon=true, noimagen=false;
 Sprite MovJD, MovJQ, MovJI, MovJAB, MovJAR, Rey;
 StopWatch reloj; //reloj, contador para llevar el tiempo
+//------------------------------------Definición de variables---------------------------------//
 void setup()
 {
+//---------------------------Carga de imágenes, sonido y sprites------------------------------//  
   size(900, 600);
   letra = loadFont("letra1.vlw");
   letra1 = loadFont("letra2.vlw");
@@ -51,7 +53,6 @@ void setup()
   genero = loadImage("genero.png");
   minim = new Minim(this);
   musicafondo = minim.loadFile("musicafondo.mp3");
-  //musicafondo.loop();
   mapa2 = loadImage("mapa2.png");
   hsentado = loadImage("hsentado.png");
   consola = loadImage("consola.png");
@@ -59,22 +60,25 @@ void setup()
   sonidon = loadImage("sonidonn.png");
   sonidoff = loadImage("sonidoff.png");
   mordecaimapa= loadImage("modecaimapa.png");
+  //---------------------------Carga de imágenes, sonido y sprites------------------------------//
 }
 void draw()
 {
-  //ataque1();
   interfaz();
   accion();
   mapa2();
-  //sonido();
-  //print(mouseX, mouseY);
+  sonido(); 
 }
 void sonido()
 {
+  float xSonido=10, ySonido=0;
   if(botonoff==false)
   {
     musicafondo.play();
-    image(sonidon,10,0,50,50);
+    if(noimagen==false)
+    {
+      image(sonidon,xSonido,ySonido,50,50);
+    }  
     if(mouseX>=20 && mouseX<=49 && mouseY>=9 && mouseY<=36 && mousePressed)
     {
         botonoff=true;
@@ -82,11 +86,23 @@ void sonido()
   }
   if(botonoff==true)
   {
-    image(sonidoff,10,35,50,50);
+    if(noimagen==false)
+    {
+      image(sonidoff,xSonido,ySonido+ 35,50,50);
+    }  
     musicafondo.pause();
     if(mouseX>=18 && mouseX<=49 && mouseY>=43 && mouseY<=73 )
     {
       if(mousePressed)botonoff=false;
     }
+  }
+  if(l==true)
+  {
+    noimagen=true;
+    pushMatrix();
+    translate(20, 10);
+    image(sonidon,xSonido,ySonido,50,50);
+    image(sonidoff,xSonido,ySonido+ 35,50,50);
+    popMatrix();
   }
 }
