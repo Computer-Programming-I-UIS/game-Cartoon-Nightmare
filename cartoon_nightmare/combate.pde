@@ -4,6 +4,7 @@ void combate() {
   fill(250);
   text("MORDECAI", 415, 25);
   text("JONAS", 435, 580);
+  fill(250);
   barraVida(390, 50);      //MORDECAI
   barraVida(390, 515);      //JONAS
   fill(#3E0D8E);
@@ -22,22 +23,22 @@ void combate() {
   fill(250);
   if (keyPressed ) {    //Movimiento j1 prueba
     if (keyCode==LEFT) {
-      xj1 -= 10;
+      xj1 -= 7;
       if (xj1<375) {
         xj1=375;
       }
     } else if (keyCode==RIGHT) {
-      xj1 += 10;
+      xj1 += 7;
       if (xj1>625) {
         xj1=625;
       }
     } else if (keyCode==UP) {
-      yj1 -= 10;
+      yj1 -= 7;
       if (yj1<125) {
         yj1=125;
       }
     } else if (keyCode==DOWN) {
-      yj1 += 10;
+      yj1 += 7;
       if (yj1>475) {
         yj1=475;
       }

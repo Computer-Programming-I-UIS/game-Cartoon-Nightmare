@@ -1,4 +1,4 @@
-boolean h1=true, h2=true, h3=true, h4 = true;
+boolean h1=true, h2=true, h3=true, h4 = true, h5=true, h6=true;
 void historiaP1()
 {
   if (h1 == true) {
@@ -55,3 +55,25 @@ void historiaP4(){
   fill(250);
   }
 }
+//-------------------------------------------Conversación rey helado------------------------------------//
+void historiaP6()
+{
+  if(h6==true){
+  text("OH!, tenemos invitados...",420,490);
+  text("Un gusto, soy el Rey Helado y soy el guia de \nesta dimensión.",420,520);
+  fill(250,0,0);
+  text("Presiona 's' para escuchar al Rey Helado...",420,570);  
+  fill(250);
+    }
+}    
+void historiaP5()
+  {
+    if(h5==true)
+    {
+      fill(250);
+      textFont(letra1, 18);
+      text("Te preguntarás que es éste lugar, Jonas. Te explico, \nlas caricaturas favoritas de tu hermano decidieron llevarlo a un lugar donde supuestamente \nserá feliz, ya que tú lo dejabas a solas mucho tiempo. \nDeberás enfrentarte a unas de sus caricaturas favoritas y \ndemostrar que si te importa.",400,470);
+      fill(250,0,0);
+      text("Dirigite a tu primer combate que será con Mordecai. Derrotalo!!",320,590);    
+    }
+  }

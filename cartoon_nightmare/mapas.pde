@@ -1,6 +1,6 @@
 int xa=700, ya =250 ;
 float vely = 2, velx = 7;
-boolean a=false, v=true, entroportal=false, reyMov=false,textorh=false, n=false;
+boolean a=false, v=true, entroportal=false, reyMov=false,textorh=false, n=false, morde=false;
 void mapa1() {
 
   if (v==true) {
@@ -62,13 +62,15 @@ void mapa2() {
       }  
   }
   if(textorh==true){
-    text("OH!, tenemos invitados...",420,490);
-    text("Un gusto, soy el Rey Helado y soy el guia de \nesta dimensión.",420,520);
-    fill(250,0,0);
-    text("Presiona 'a' para escuchar al Rey Helado...",420,570);
-    fill(250);
-    image(mordecaimapa,240,420,90,90);
+    historiaP6();
+    morde=true;
   }
+  if(morde==true)image(mordecaimapa,240,420,90,90);
+  if(key=='s')
+  {
+    h6=false;
+    historiaP5();
+  }  
   if(xJ>=163&& xJ<=289 && yJ>=383 && yJ<=486 && n==true)
   {
     entroportal=false;
