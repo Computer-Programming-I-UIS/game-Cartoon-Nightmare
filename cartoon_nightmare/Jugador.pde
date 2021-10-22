@@ -21,13 +21,13 @@ void jugador()
         translate(xJ, yJ);
         MovJD.draw();
         popMatrix();
-        xJ+=7;
+        xJ+=12;
       } else if (keyPressed && keyCode == RIGHT && xJ<380 && yJ>=420) {
         pushMatrix();
         translate(xJ, yJ);
         MovJD.draw();
         popMatrix();
-        xJ+=7;
+        xJ+=12;
       } else if (keyPressed && keyCode == RIGHT) {
         pushMatrix();
         translate(xJ, yJ);
@@ -44,7 +44,7 @@ void jugador()
         translate(xJ, yJ);
         MovJI.draw();
         popMatrix();
-        xJ-=7;
+        xJ-=12;
       } else if (keyPressed && keyCode == LEFT) {
         pushMatrix();
         translate(xJ, yJ);
@@ -61,14 +61,14 @@ void jugador()
         translate(xJ, yJ);
         MovJAB.draw();
         popMatrix();
-        yJ+=7;
+        yJ+=12;
       } else if (keyCode ==DOWN && yJ<=420 && xJ>=390 && xJ<=855)      //Movimiento ABAJO zona despues de azul
       {
         pushMatrix();
         translate(xJ, yJ);
         MovJAB.draw();
         popMatrix();
-        yJ+=7;
+        yJ+=12;
       } else if (keyCode ==DOWN)      //Condicional limites inferiores
       {
         pushMatrix();
@@ -85,7 +85,7 @@ void jugador()
         translate(xJ, yJ);
         MovJAR.draw();
         popMatrix();
-        yJ-=7;
+        yJ-=12;
       } else if (keyPressed && keyCode == UP) {
         pushMatrix();
         translate(xJ, yJ);

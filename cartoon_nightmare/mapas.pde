@@ -1,6 +1,6 @@
 int xa=700, ya =250 ;
 float vely = 2, velx = 7;
-boolean a=false, v=true, entroportal=false, reyMov=false,textorh=false;
+boolean a=false, v=true, entroportal=false, reyMov=false,textorh=false, n=false;
 void mapa1() {
 
   if (v==true) {
@@ -41,6 +41,8 @@ void mapa2() {
       popMatrix();
       jugador();
       image(consola,150,480,200,200);
+      h2=false;
+      n=true;
       historiaP4();      //historia 4
       if(reyMov==false)image(rey,665,369,100,100);      //Rey Helado en la otra dimensión
       if(xJ>=689 && xJ<=740 && yJ>=365 && yJ<=411)
@@ -58,7 +60,6 @@ void mapa2() {
         Rey.draw();
         popMatrix();
       }  
-      //image(mordecai, 250, 480, 120,120);
   }
   if(textorh==true){
     text("OH!, tenemos invitados...",420,490);
@@ -67,5 +68,13 @@ void mapa2() {
     text("Presiona 'a' para escuchar al Rey Helado...",420,570);
     fill(250);
     image(mordecaimapa,240,420,90,90);
+  }
+  if(xJ>=163&& xJ<=289 && yJ>=383 && yJ<=486 && n==true)
+  {
+    entroportal=false;
+    h4=false;
+    textorh=false;
+    combate();
+    //defensa();
   }
 }

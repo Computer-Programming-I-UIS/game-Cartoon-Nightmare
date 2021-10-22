@@ -1,5 +1,5 @@
 boolean si= false, j=false, i=false, c=false, l=false, historiaon=true, mapa1off=true;
-float xc=135,yc=300,xr=120,yr=160,xb=500,yb=500;
+float xc=135,yc=300,xr=120,yr=160;
 void interfaz()
 {
   if (si == false) {
@@ -155,9 +155,9 @@ void accion()
   fill(#BBFC7F);
   ellipse(xb+145,yb+20,230,90);      //verde
   rect(800,460,20,20);
-   fill(#E8F02C);
-   ellipse(xb+145,yb+20,130,90);      //amarillo
-   rect(800,500,20,20);
+  fill(#E8F02C);
+  ellipse(xb+145,yb+20,130,90);      //amarillo
+  rect(800,500,20,20);
   fill(#F7464C);
   ellipse(xb+145,yb+20,50,90);      //rojo
   rect(800,540,20,20);

@@ -9,7 +9,7 @@ AudioPlayer musicafondo;
 
 PFont letra, letra1, letraC;
 PImage fondo, tv, fondo2, niñoint, mapa1, portal, teclas, hqui, hizq, hder, hab, harri, fondop1, mordecai, restEdad, genero, mapa2, hsentado, consola,rey, sonidon, sonidoff, mordecaimapa, bosque ;
-float yC=80, x=350, y=100, tiempoFrames, xJ=140, yJ=550, vel = 5;
+float yC=80, x=350, y=100, tiempoFrames, xJ=140, yJ=550, vel = 5, xb=500,yb=500;
 int jugadorFrames, xw=30, yw=500, xins = 210, yins = 300, xj1=500, yj1=300; //x=270
 boolean z=false, botonoff=false, botonon=true;
 Sprite MovJD, MovJQ, MovJI, MovJAB, MovJAR, Rey;
@@ -62,10 +62,11 @@ void setup()
 }
 void draw()
 {
+  //ataque1();
   interfaz();
   accion();
   mapa2();
-  sonido();
+  //sonido();
   //print(mouseX, mouseY);
 }
 void sonido()
