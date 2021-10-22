@@ -19,6 +19,11 @@ Para éste apartado se adoptó un modo bastante clásico: Movimiento del persona
 2.Descargar la librería Minim. Siga estos pasos: Abrir el archivo cartoon_nightmare en Processing / Ya en la pestaña, seleccione Sketch/ importar libreria/ añadir librera/en el buscagor escribir "Minim"/ da click y presiona en install.
 3.En el repositorio encontrará una file llamado "data" debe descargar todos los archivos pertenecientes a ésta.
 
+##Modalidad de juego
+Para Cartoon Nigthmare se utilizó un método de juego poco común; consiste en dos pantallas interactivas (ver imagen adjunta), en la primera debemos evitar ser golpeados por los objetos que caen. 
+La segunda pantalla y más pequeña representa el ataque del personaje hacia el enemigo; se debe oprimir la letra z lo más cerca del centro, al estar más cerca del centro el enemigo se llevará un mayor daño.
+  
+
 Características legales del videojuego:
 El juego es desarrollado para un público que busque la recreación, una restricción de edad justa es la de +10 años; primero por la narración de sucesos y pocos actos violentos, para jugar y divertise con éste juego no es necesario un gran desarrollo intelectual, saber leer las intrucciones y los caminos que debe escoger.
 
@@ -37,6 +42,6 @@ Canción: https://www.youtube.com/watch?v=tklvXwRcXYc&list=PLD7-2uwyvyXD__ke7B0G
 
 ## Restricción Edad
 
-<img src="https://github.com/Computer-Programming-I-UIS/game-Cartoon-Nightmare/blob/main/cartoon_nightmare/data/restriccionEdad.png" width="60">
+<img src="https://github.com/Computer-Programming-I-UIS/game-Cartoon-Nightmare/blob/main/cartoon_nightmare/data/restriccionEdad.png" width="80">
 
 
