@@ -20,9 +20,9 @@ Para éste apartado se adoptó un modo bastante clásico: Movimiento del persona
 3.En el repositorio encontrará una file llamado "data" debe descargar todos los archivos pertenecientes a ésta.
 
 ##Modalidad de juego
-Para Cartoon Nigthmare se utilizó un método de juego poco común; consiste en dos pantallas interactivas (ver imagen adjunta), en la primera debemos evitar ser golpeados por los objetos que caen. 
+Para Cartoon Nigthmare se utilizó un método de juego poco común; consiste en dos pantallas interactivas (ver imagen adjunta), en la primera debemos evitar ser golpeados moviendote con las flechas del teclado así esquivar los objetos que caen. 
 La segunda pantalla y más pequeña representa el ataque del personaje hacia el enemigo; se debe oprimir la letra z lo más cerca del centro, al estar más cerca del centro el enemigo se llevará un mayor daño.
-  
+ ![image text](https://github.com/Computer-Programming-I-UIS/game-Cartoon-Nightmare/blob/main/cartoon_nightmare/data/Modo.de.batalla.jpeg) 
 
 Características legales del videojuego:
 El juego es desarrollado para un público que busque la recreación, una restricción de edad justa es la de +10 años; primero por la narración de sucesos y pocos actos violentos, para jugar y divertise con éste juego no es necesario un gran desarrollo intelectual, saber leer las intrucciones y los caminos que debe escoger.
